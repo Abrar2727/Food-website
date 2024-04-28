@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.logo {
+    width: 50px;
+}
+.nav{
+    background-color: black;
+    z-index: 2000;
+}
+/* .meal-layer{
+
+} */
+
+.img-layer{
+    height: 0%;
+    width: 100%;
+    top: 100%;
+    /* bottom: 0%; */
+    visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(240, 248, 255, 0.769);
+    transition: 0.5s all;
+}
+
+
+.item:hover .img-layer{
+    visibility: visible;
+    top: 0%;
+    height: 100%;
+    /* transform: scale(1.3); */
+}
+
+/* .img-layer:hover{
+    background-color: rebeccapurple;
+} */
